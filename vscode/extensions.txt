@@ -1,0 +1,14 @@
+be5invis.toml
+dracula-theme.theme-dracula
+eamodio.gitlens
+heptio.jsonnet
+HookyQR.beautify
+mauve.terraform
+ms-vscode.Go
+shanoor.vscode-nginx
+timonwong.shellcheck
+ms-vsliveshare.vsliveshare
+ms-azuretools.vscode-docker
+hashicorp.terraform
+ivory-lab.jenkinsfile-support
+2gua.rainbow-brackets
