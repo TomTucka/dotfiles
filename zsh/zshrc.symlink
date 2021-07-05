@@ -11,10 +11,27 @@ for file in ${(M)config_files:#*/path.zsh}; do
   source "$file"
 done
 
-# load plugins (managed with antibody)
+# load antibody plugins
 source ~/.zsh_plugins.sh
 
-unset config_files
+# load everything but the path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
+  source "$file"
+done
 
-# use .localrc for super duper secret stuff
+autoload -Uz compinit
+for dump in ~/.zcompdump(N.mh+24); do
+  compinit
+done
+compinit -C
+
+
+# load every completion after autocomplete loads
+for file in ${(M)config_files:#*/completion.zsh}; do
+  source "$file"
+done
+
+unset config_files updated_at
+
+# use .localrc for SUPER SECRET CRAP
 [ -f ~/.localrc ] && . ~/.localrc
