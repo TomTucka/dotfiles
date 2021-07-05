@@ -15,7 +15,11 @@ You'll need a few things before you get started:
 
 ### Install
 
-WIP
+1. Run initiation script
+    ```bash
+    bash <(curl -fsSL https://raw.githubusercontent.com/tomtucka/dotfiles/main/setup.sh)
+    ```
+
 
 ### Recommended Software
 
