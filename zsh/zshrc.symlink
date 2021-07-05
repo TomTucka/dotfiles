@@ -14,6 +14,8 @@ done
 # load antibody plugins
 source ~/.zsh_plugins.sh
 
+
+
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
   source "$file"
@@ -35,3 +37,6 @@ unset config_files updated_at
 
 # use .localrc for SUPER SECRET CRAP
 [ -f ~/.localrc ] && . ~/.localrc
+
+# Direnv
+eval "$(direnv hook $SHELL)"

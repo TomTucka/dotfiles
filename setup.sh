@@ -4,7 +4,7 @@
 git clone https://github.com/tomtucka/dotfiles ~/.dotfiles
 
 # Make setup executable
-chmod +x ~/.dotfiles/setup/bootstrap.sh
+chmod +x ~/.dotfiles/script/bootstrap.sh
 
 # Run setup
-~/.dotfiles/setup/bootstrap.sh
+~/.dotfiles/script/bootstrap.sh
