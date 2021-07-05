@@ -1,9 +1,9 @@
 {
   "editor.fontSize": 18,
-  "editor.formatOnSave": true,
   "editor.rulers": [80, 120],
   "editor.fontLigatures": true,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
   "editor.trimAutoWhitespace": true,
   "editor.tabCompletion": "on",
   "explorer.openEditors.visible": 0,
@@ -18,7 +18,6 @@
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "workbench.colorTheme": "Dracula",
-  "window.zoomLevel": 0,
   "extensions.ignoreRecommendations": false,
   "search.exclude": {
     "**/node_modules": true,
@@ -37,8 +36,15 @@
   "telemetry.enableTelemetry": false,
   "terraform.languageServer": {
     "external": true,
-    "args": ["serve"]
+    "args": [
+      "serve"
+    ]
   },
+  "terraform-ls.rootModules": [
+    "environment",
+    "region",
+    "account"
+  ],
   "telemetry.enableCrashReporter": false,
   "search.useGlobalIgnoreFiles": true,
   "workbench.editor.highlightModifiedTabs": true,
@@ -51,5 +57,18 @@
   "editor.smoothScrolling": true,
   "files.exclude": {
     "yarn.lock": true
-  }
+  },
+  "explorer.confirmDelete": false,
+  "liveshare.authenticationProvider": "GitHub",
+  "go.useLanguageServer": true,
+  "go.formatTool": "goimports",
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "window.zoomLevel": 2,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "editor.lineNumbers": "relative",
+  "vim.useSystemClipboard": true,
 }
