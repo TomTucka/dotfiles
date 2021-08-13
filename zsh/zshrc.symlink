@@ -1,7 +1,7 @@
 # add some shortcuts
 export DOTFILES="$HOME/.dotfiles"
 export WORKSPACE="$HOME/workspace"
-
+export PROJECTS="$HOME"
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/*/*.zsh)
