@@ -1,8 +1,9 @@
 mafredri/zsh-async
+rupa/z
 zsh-users/zsh-completions
 zsh-users/zsh-autosuggestions
 
-
+# Should always be last...
 sindresorhus/pure
-zdharma/fast-syntax-highlighting
 zsh-users/zsh-history-substring-search
+zdharma-continuum/fast-syntax-highlighting
