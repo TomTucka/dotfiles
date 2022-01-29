@@ -2,6 +2,12 @@
 export DOTFILES="$HOME/.dotfiles"
 export WORKSPACE="$HOME/workspace"
 export PROJECTS="$HOME"
+
+# add java home to set jdk 11 as default
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk
+export SOPS_AGE_KEY_FILE=~/.config/sops/age/keys.txt
+
+
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/*/*.zsh)
@@ -13,8 +19,6 @@ done
 
 # load antibody plugins
 source ~/.zsh_plugins.sh
-
-
 
 # load everything but the path and completion files
 for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}; do
@@ -40,3 +44,10 @@ unset config_files updated_at
 
 # Direnv
 eval "$(direnv hook $SHELL)"
+
+# go-jira autocomplete
+eval "$(jira --completion-script-bash)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
