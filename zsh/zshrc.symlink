@@ -9,7 +9,7 @@ export SOPS_AGE_KEY_FILE=~/.config/sops/age/keys.txt
 
 
 # all of our zsh files
-typeset -U config_files
+typeset -U config_file
 config_files=($DOTFILES/*/*.zsh)
 
 # load the path files
@@ -46,8 +46,12 @@ unset config_files updated_at
 eval "$(direnv hook $SHELL)"
 
 # go-jira autocomplete
-eval "$(jira --completion-script-bash)"
+# eval "$(jira --completion-script-bash)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+# 1Password
+# eval $(op signin my)
+
