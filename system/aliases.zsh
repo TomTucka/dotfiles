@@ -1,2 +1,0 @@
-#!/bin/sh
-alias ls='ls -G'
