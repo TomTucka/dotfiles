@@ -1,0 +1,18 @@
+[aws]
+disabled = true
+
+[cmake]
+disabled = true
+
+[cmd_duration]
+min_time = 500
+format = "[$duration]($style) "
+
+[conda]
+disabled = true
+
+[crystal]
+disabled = true
+
+[dart]
+disabled = true
