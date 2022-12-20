@@ -16,3 +16,6 @@ disabled = true
 
 [dart]
 disabled = true
+
+[terraform]
+format = "[🏗️  $version]($style) "
