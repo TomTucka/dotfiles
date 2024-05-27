@@ -1,0 +1,15 @@
+[core]
+  editor = nvim
+[include]
+  path = ~/.gitconfig_wsl
+[user]
+  name  = "Tom Withers"
+  email = "tom@withersoft.co.uk"
+[github]
+  user  = "tomtucka"
+
+[alias]
+  aa = add --all
+  l  = log --one-line 
+[init]
+	defaultBranch = main
