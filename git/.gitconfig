@@ -1,7 +1,7 @@
 [core]
   editor = nvim
-#[include]
-#  path = ~/.gitconfig_wsl
+[include]
+  path = ~/.gitconfig_wsl
 [user]
   name  = "Tom Withers"
   email = "tom@withersoft.co.uk"
